@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddhant Tiwari | Content x AI x Growth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #e2e8f0;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section {
+            padding: 8rem 1rem;
+        }
+        .card-bg {
+            background-color: rgba(23, 23, 23, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .btn-primary {
+            @apply px-6 py-3 font-semibold text-white bg-sky-500 hover:bg-sky-600 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105;
+        }
+        .btn-secondary {
+            @apply px-6 py-3 font-semibold text-white bg-gray-700 hover:bg-gray-600 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105;
+        }
+        .background-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 2rem 2rem;
+        }
+        .glow-effect {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, rgba(56, 189, 248, 0) 70%);
+            pointer-events: none;
+        }
+        .credential-logo {
+            height: 4rem; /* 64px */
+            filter: grayscale(100%) brightness(1.5);
+            opacity: 0.6;
+            transition: all 0.3s ease;
+        }
+        .credential-logo:hover {
+            filter: grayscale(0%) brightness(1);
+            opacity: 1;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Background Grid & Glow Effect -->
+    <div class="background-grid"></div>
+    <div class="glow-effect" id="glow1" style="top: 10%; left: 15%;"></div>
+    <div class="glow-effect" id="glow2" style="bottom: 10%; right: 15%;"></div>
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 p-4 bg-black/30 backdrop-blur-sm">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">Siddhant Tiwari</h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
+                <a href="#credentials" class="hover:text-sky-400 transition-colors">Credentials</a>
+                <a href="#portfolio" class="hover:text-sky-400 transition-colors">Portfolio</a>
+                <a href="#contact" class="hover:text-sky-400 transition-colors">Contact</a>
+            </nav>
+            <a href="#contact" class="btn-primary hidden md:inline-block">Let's Talk</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center text-center relative overflow-hidden">
+        <div class="container mx-auto px-4 z-10">
+            <img src="Vaibhav PNG logo.jpg" alt="Vaibhav Sisinty" class="w-24 h-24 rounded-full mx-auto mb-6 border-2 border-sky-400/50 shadow-lg">
+            <p class="text-sky-400 font-semibold mb-2">Content x AI x Growth</p>
+            <h1 class="text-4xl md:text-7xl font-black mb-4 leading-tight">
+                Vaibhav, I've built the blueprint to <span class="gradient-text">10x your personal brand.</span>
+            </h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto text-slate-300 mb-8">
+                I'm the strategic operator you need to run the engine.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#portfolio" class="btn-primary w-full sm:w-auto">See The Proof</a>
+                <a href="https://www.linkedin.com/in/siddhant-tiwari-law-2024-llm/" target="_blank" class="btn-secondary w-full sm:w-auto">View LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 md:py-32">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold">Your Vision, <span class="gradient-text">Amplified</span></h2>
+                <p class="max-w-3xl mx-auto mt-4 text-slate-400">
+                    You're building a world-class brand at the intersection of marketing, AI, and entrepreneurship. To scale it, you don't just need a content creator; you need a strategic operator with a founder's mindset. That's where I come in.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="card-bg p-8 rounded-xl text-center transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-sky-400 mb-4">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto"><path d="M12 22h6a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v10"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M12 18a6 6 0 0 0-6-6v-2a6 6 0 0 0 12 0v2a6 6 0 0 0-6 6Z"></path><path d="M12 12v6"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Legal Mind, Creator's Heart</h3>
+                    <p class="text-slate-400">My law education taught me structured thinking and rigorous research, which I apply to build content systems that are ruthlessly efficient.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="card-bg p-8 rounded-xl text-center transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-sky-400 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M12 8v4"></path><path d="M12 16h.01"></path><path d="M8 12h8"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">AI-Native Operations</h3>
+                    <p class="text-slate-400">I don't just use AI; I build entire workflows around it. From scaled content creation to custom chatbots, I leverage AI for exponential output.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="card-bg p-8 rounded-xl text-center transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-sky-400 mb-4">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Proven Growth Engineer</h3>
+                    <p class="text-slate-400">I've built YouTube and Instagram channels from scratch, turning subscribers into client leads and assisting creators with over 1M+ subs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credentials Section -->
+    <section id="credentials" class="py-16">
+        <div class="container mx-auto px-4">
+            <h3 class="text-center text-slate-500 font-semibold uppercase tracking-wider mb-8">Education & Credentials</h3>
+            <div class="flex justify-center items-center gap-x-12 md:gap-x-20 flex-wrap">
+                <img src="NLUO PNG LOGO.png" alt="National Law University Odisha Logo" class="credential-logo">
+                <img src="DSNLU PNG LOGO.jpg" alt="Damodaram Sanjivayya National Law University Logo" class="credential-logo">
+                <img src="GrowthSchool LOGO PNG.png" alt="GrowthSchool Logo" class="credential-logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 md:py-32 bg-black/20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold">From Zero to Virality: <span class="gradient-text">My Content Lab</span></h2>
+                <p class="max-w-3xl mx-auto mt-4 text-slate-400">Execution is everything. Here’s a snapshot of my work.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="card-bg rounded-xl overflow-hidden group">
+                    <img src="https://placehold.co/600x400/0a0a0a/e2e8f0?text=Legal+Commentary" alt="Legal Commentary YouTube Channel" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">@legalcommentary</h3>
+                        <p class="text-slate-400 mb-4">Grew from 0 to 1K+ subscribers, generating direct client leads. Managed everything end-to-end.</p>
+                        <a href="https://www.youtube.com/@LegalCommentary" target="_blank" class="font-semibold text-sky-400 hover:text-sky-300">View Channel →</a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="card-bg rounded-xl overflow-hidden group">
+                    <img src="https://placehold.co/600x400/0a0a0a/e2e8f0?text=A+Digital+Blogger" alt="A Digital Blogger" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Assisted @ADigitalBlogger</h3>
+                        <p class="text-slate-400 mb-4">Contributed to a creator with over 1M+ subscribers, learning the mechanics of large-scale content operations.</p>
+                        <a href="https://www.youtube.com/@ADigitalBlogger" target="_blank" class="font-semibold text-sky-400 hover:text-sky-300">View Channel →</a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="card-bg rounded-xl overflow-hidden group">
+                    <img src="https://placehold.co/600x400/0a0a0a/e2e8f0?text=Faceless+IG+Pages" alt="Faceless Instagram Pages" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Faceless Instagram Pages</h3>
+                        <p class="text-slate-400 mb-4">Built and sold profitable pages like @monk.edge. Mastered the psychology of hooks, CTAs, and viral design.</p>
+                    </div>
+                </div>
+                 <!-- Project 4 -->
+                <div class="card-bg rounded-xl overflow-hidden group">
+                    <img src="https://placehold.co/600x400/0a0a0a/e2e8f0?text=LinkedIn+Carousels" alt="LinkedIn Carousels" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">LinkedIn Carousels</h3>
+                        <p class="text-slate-400 mb-4">Replicated Vaibhav's signature style (Zerodha, Netflix) to prove strategic understanding and design skills.</p>
+                        <a href="https://www.linkedin.com/in/siddhant-tiwari-law-2024-llm/" target="_blank" class="font-semibold text-sky-400 hover:text-sky-300">See on LinkedIn →</a>
+                    </div>
+                </div>
+                 <!-- Project 5 -->
+                <div class="card-bg rounded-xl overflow-hidden group">
+                    <img src="https://placehold.co/600x400/0a0a0a/e2e8f0?text=Excluziv.in" alt="Excluziv Startup" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Founder: Excluziv</h3>
+                        <p class="text-slate-400 mb-4">Built a Web3 compliance startup from scratch. Designed the site, wrote copy, and handled distribution alone.</p>
+                        <a href="http://www.excluziv.in" target="_blank" class="font-semibold text-sky-400 hover:text-sky-300">Visit Site →</a>
+                    </div>
+                </div>
+                 <!-- Project 6 -->
+                <div class="card-bg rounded-xl overflow-hidden group">
+                    <img src="https://placehold.co/600x400/0a0a0a/e2e8f0?text=AI+Chatbot" alt="AI Chatbot" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Personal AI Chatbot</h3>
+                        <p class="text-slate-400 mb-4">See my AI skills in action. Ask my bot anything about my experience, skills, or projects.</p>
+                        <a href="https://www.chatbase.co/chatbot-iframe/0bNBcOTb4mGWvVkyECV4M" target="_blank" class="font-semibold text-sky-400 hover:text-sky-300">Chat with my Bot →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stack Section -->
+    <section id="stack" class="py-20 md:py-32">
+        <div class="container mx-auto px-4">
+             <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold">My AI & <span class="gradient-text">Growth Stack</span></h2>
+                <p class="max-w-3xl mx-auto mt-4 text-slate-400">I believe in systems over goals. This is the toolkit I use to design, create, and distribute content at scale.</p>
+            </div>
+            <div class="max-w-4xl mx-auto p-8 card-bg rounded-xl">
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 text-center">
+                    <div class="flex flex-col items-center justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT" class="h-16 w-16 mb-2 filter grayscale brightness-200">
+                        <p>ChatGPT</p>
+                    </div>
+                     <div class="flex flex-col items-center justify-center">
+                        <img src="https://www.anthropic.com/images/claude-2-icon.d60d36c2.svg" alt="Claude" class="h-16 w-16 mb-2 p-2">
+                        <p>Claude</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg" alt="Notion AI" class="h-16 w-16 mb-2 filter grayscale brightness-200">
+                        <p>Notion AI</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg" alt="Canva" class="h-16 w-16 mb-2">
+                        <p>Canva</p>
+                    </div>
+                </div>
+                <p class="text-center mt-8 text-slate-400">Plus a daily habit of testing new tools to stay on the cutting edge.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 md:py-32 bg-black/20">
+        <div class="container mx-auto px-4 text-center">
+             <h2 class="text-3xl md:text-5xl font-bold">Let's <span class="gradient-text">Build.</span></h2>
+             <p class="max-w-2xl mx-auto mt-4 mb-8 text-slate-300">
+                 I’ve done my homework, from attending your AI Masterclass to reverse-engineering your content strategy. I’m not here to learn; I’m here to execute and elevate. I have a plan ready.
+             </p>
+             <div class="flex justify-center items-center gap-4 mb-8">
+                <a href="mailto:siddhant.tiwari.work@gmail.com" class="btn-primary">Email Me</a>
+                <a href="https://www.chatbase.co/chatbot-iframe/0bNBcOTb4mGWvVkyECV4M" target="_blank" class="btn-secondary">Chat with My AI</a>
+            </div>
+             <div class="text-slate-400">
+                <p class="mb-2">siddhant.tiwari.work@gmail.com</p>
+                <p>+91-7974702342</p>
+             </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-slate-500">
+        <p>&copy; 2024 Siddhant Tiwari. Built to impress.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Glow effect follows mouse
+        const glow1 = document.getElementById('glow1');
+        const glow2 = document.getElementById('glow2');
+        window.addEventListener('mousemove', (e) => {
+            const { clientX, clientY } = e;
+            glow1.style.transform = `translate(${clientX - 250}px, ${clientY - 250}px)`;
+            glow2.style.transform = `translate(${clientX - 250}px, ${clientY - 250}px)`;
+        });
+    </script>
+
+</body>
+</html>
